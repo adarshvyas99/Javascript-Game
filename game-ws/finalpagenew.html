@@ -1,0 +1,46 @@
+<script>
+
+
+x = 0;
+function lw()
+{
+
+const d = document.getElementById("d1");
+d.style.left=x;
+//d.style.top=rh- 30%;
+if (x<=69){
+x++
+setTimeout(lw, 3);
+}
+}
+</script>
+
+<style>
+ 
+ div#d1 {
+width: 80%;
+height:80%;
+border: 2px solid yellow;
+background: #3c4454;
+position: fixed;
+margin: 10%;
+}
+
+div#d2 {
+width: 20%;
+height:30%;
+border: 2px solid yellow;
+background: grey;
+top: 10%;
+position: absolute; 
+box-shadow: 5px 5px 5px orange;
+}
+</style>
+
+<body>
+<button onclick="lw()" > Start Game </button>
+<div id="d1">
+<div id="d2" onclick="lw()" >  
+<div>
+<div>
+</body>
